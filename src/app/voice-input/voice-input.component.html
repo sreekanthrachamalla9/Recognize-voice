@@ -1,0 +1,31 @@
+<div class="container mt-4">
+  <div class="row">
+    <!-- 🎧 Mic (Earphones) -->
+    <div class="col-md-6 mb-4">
+      <div class="card shadow p-4">
+        <h5>🎧 Mic (Earphones Only)</h5>
+        <button class="btn btn-primary"
+                [disabled]="isListening"
+                (click)="startRecognition('mic')">
+          {{ isListening && currentType === 'mic' ? 'Listening...' : 'Start Listening' }}
+        </button>
+        <p class="mt-3">📝 Text:</p>
+        <div class="border p-2" style="min-height: 60px">{{ micText }}</div>
+      </div>
+    </div>
+
+    <!-- 🔈 Speaker (Laptop Mic) -->
+    <div class="col-md-6 mb-4">
+      <div class="card shadow p-4">
+        <h5>🔈 Speaker (Built-in Mic Only)</h5>
+        <button class="btn btn-success"
+                [disabled]="isListening"
+                (click)="startRecognition('speaker')">
+          {{ isListening && currentType === 'speaker' ? 'Listening...' : 'Start Listening' }}
+        </button>
+        <p class="mt-3">📝 Text:</p>
+        <div class="border p-2" style="min-height: 60px">{{ speakerText }}</div>
+      </div>
+    </div>
+  </div>
+</div>

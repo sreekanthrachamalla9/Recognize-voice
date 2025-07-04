@@ -1,0 +1,9 @@
+.card {
+  border-radius: 1rem;
+  background-color: #f8f9fa;
+}
+
+button {
+  border-radius: 0.5rem;
+  padding: 8px 16px;
+}

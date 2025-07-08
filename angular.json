@@ -44,7 +44,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/recognize-voice/"
+              "baseHref": "/Recognize-voice/"
             },
             "development": {
               "buildOptimizer": false,
